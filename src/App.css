@@ -1,0 +1,259 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #1c2529;
+  border-bottom: 1px solid #2c3a40;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00e054;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: #9ab;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #fff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page h2 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #2c3a40;
+  border-radius: 6px;
+  background-color: #1c2529;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search-bar input::placeholder {
+  color: #678;
+}
+
+.search-bar button {
+  padding: 0.6rem 1.2rem;
+  background-color: #00e054;
+  color: #14181c;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #00c048;
+}
+
+.search-actions {
+  margin-bottom: 1.5rem;
+}
+
+.btn-back {
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  color: #9ab;
+  border: 1px solid #2c3a40;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  color: #fff;
+  border-color: #9ab;
+}
+
+/* Movie grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Movie card */
+.movie-card {
+  background-color: #1c2529;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+}
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-card-placeholder {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c3a40;
+  color: #678;
+  font-size: 0.9rem;
+}
+
+.movie-card-body {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.movie-card-body h3 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.movie-year {
+  font-size: 0.85rem;
+  color: #678;
+}
+
+.movie-overview {
+  font-size: 0.8rem;
+  color: #9ab;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.movie-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.movie-card-actions button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-add {
+  background-color: #00e054;
+  color: #14181c;
+}
+
+.btn-add:hover {
+  background-color: #00c048;
+}
+
+.btn-remove {
+  background-color: #e04040;
+  color: #fff;
+}
+
+.btn-remove:hover {
+  background-color: #c03030;
+}
+
+/* Status messages */
+.status-msg {
+  color: #9ab;
+  text-align: center;
+  padding: 2rem;
+}
+
+.status-msg.error {
+  color: #e06060;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  color: #9ab;
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #2c3a40;
+  border-top-color: #00e054;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* List filter input */
+.list-filter {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #2c3a40;
+  border-radius: 6px;
+  background-color: #1c2529;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.list-filter::placeholder {
+  color: #678;
+}
+
+/* Not found */
+.not-found {
+  text-align: center;
+  padding-top: 4rem;
+}
