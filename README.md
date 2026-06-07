@@ -4,7 +4,6 @@ Aplicación web para el seguimiento de películas. Inspirada en Letterboxd, perm
 
 ## Capturas de pantalla
 
-> *(Agregá acá las capturas después del deploy)*
 
 | Home | Watchlist | Watched |
 |------|-----------|---------|
@@ -119,6 +118,6 @@ Tu app se redeployea automáticamente cada vez que hacés push a `main`.
 
 ## Autor
 
-**Tu Nombre** – [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
+Tomás Saez -  saezjuantomasph@gmail.com
 
 UTN – Desarrollo Ágil Asistido por IA
